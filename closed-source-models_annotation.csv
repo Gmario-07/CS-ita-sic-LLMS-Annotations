@@ -1,0 +1,107 @@
+condition,model,text,Does the generated sentence contain a switch between two or more languages?,Specify the only language present in the generated output.,Does the switch occur between the languages indicated in the prompt?,Specify the languages involved in the switch,Is the sentence produced a case of CS or CM?,"Does the generated sentence follow one of the main constraints presented in linguistic theory: MLF, EQ, FHC, FMC ?",Specify the followed constraint(s) ,"Does the sentence appear natural/plausible in a real communication
+context?"
+zero-shot1,GPT-5.6 Luna.,"Stasera andiamo al mare, ca vogghiu vidiri u tramontu.",Yes,,Yes,,Code-Switching,,,Yes
+zero-shot1,GPT-5.6 Luna.,"Domani andiamo in centro, picchì vogghiu accattari un beddu regalo.",Yes,,Yes,,Code-Switching,,,Yes
+zero-shot1,GPT-5.6 Luna.,"Dopo il lavoro passiamo dal mercato, ca mi serve un pocu di frutta fresca.",Yes,,Yes,,Code-Mixing,,,Yes
+zero-shot1,GPT-5.6 Luna.,"Stasera cucino la pasta, picchì vogghiu fari una cena semplice ma sapurita.",Yes,,Yes,,Code-Mixing,,,Yes
+zero-shot1,GPT-5.6 Luna.,"Domani mattina andiamo in spiaggia, ca vogghiu fari una bella passeggiata.",Yes,,Yes,,Code-Mixing,,,Yes
+few_shot2,GPT-5.6 Luna.,"Oggi ho bisogno di staccare un po’, picchì sugnu stancu e mi vogghiu godiri la serata senza pinsari a nenti.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,GPT-5.6 Luna.,"Stasera niente programmi complicati, nni jemu a fari na passiata e poi vediamo dove ci porta la serata.",Yes,,Yes,,Code-Switching,,,No
+few_shot2,GPT-5.6 Luna.,"Domani partiamo presto, ma prima passiamo dal bar picchì senza un cafè sugnu ancora mezzo addurmiscutu.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,GPT-5.6 Luna.,"Ho finito tutto il lavoro, ora mi fazzu un giro in centro e mi godo finalmente la serata.",Yes,,Yes,,Code-Mixing,,,Yes
+few_shot2,GPT-5.6 Luna.,"Quando arriviamo al mare, nni mittemu subitu cu li pedi nta l’acqua e poi ci rilassiamo fino a tardi.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,GPT-5.6 Luna.,"Dopo il lavoro sono passato dal panificio, picchì avevo voglia di un pane ca fussi ancora càvuru.",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,GPT-5.6 Luna.,"Stamattina sono uscito presto, ma fora faceva un friddu ca mi facia trimari tuttu.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,GPT-5.6 Luna.,"Stasera cucino io, picchì vogghiu fari una pasta ca ti piacerà assai.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,GPT-5.6 Luna.,"Ieri al mercato ho trovato delle arance bellissime, e u venditore mi dissi ca eranu appena arrivate.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,GPT-5.6 Luna.,"Domenica andiamo al mare, e se c’è ancora sole ni facemu nu bellu bagno prima di turnari a casa.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot41,GPT-5.6 Luna.,Domani vado al mercato perché devo comprare un po’ di cosi beddi per la cena.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot41,GPT-5.6 Luna.,"Stasera preparo una cena semplice, ma voglio aggiungere un po’ di sfinciuni per renderla più saporita.",Yes,,Yes,,Code-Mixing,,,Yes
+few_shot41,GPT-5.6 Luna.,Domani andiamo al mercato per comprare qualche arancia bedda e poi torniamo a casa.,Yes,,Yes,,Code-Mixing,,,No
+few_shot41,GPT-5.6 Luna.,Mia nonna prepara spesso la pasta con il sucu di pomodoro e la serve ancora calda.,Yes,,Yes,,Code-Mixing,,,No
+few_shot41,GPT-5.6 Luna.,"Quando torno a casa, mia madre mi prepara sempre una bella pasta cu sucu e mi aspetta in cucina.",Yes,,Yes,,Code-Mixing,,,Yes
+few_shot42,GPT-5.6 Luna.,Domani vado al mercato e compro u pani cunzatu.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot42,GPT-5.6 Luna.,Stasera preparo la cena e poi ni manciamo tutti insieme.,Yes,,Yes,,Code-Mixing,,,No
+few_shot42,GPT-5.6 Luna.,"Quando finisco il lavoro, vaju a casa e preparo la cena.",Yes,,Yes,,Code-Switching,,,No
+few_shot42,GPT-5.6 Luna.,"Ho incontrato Maria stamattina, e poi ni jemu a pigghiari un caffè.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot42,GPT-5.6 Luna.,"Oggi vado al mercato, e poi mi fermo a mangiari un arancinu.",Yes,,Yes,,Code-Mixing,,,No
+few_shot43,GPT-5.6 Luna.,Oggi vado a casa e poi mangiu cu la mia famiglia.,Yes,,Yes,,Code-Mixing,,,No
+few_shot43,GPT-5.6 Luna.,Domani vado al mercato e accattu un po’ di frutta.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot43,GPT-5.6 Luna.,Stasera ceno cu la mia famiglia e poi esco con gli amici.,Yes,,Yes,,Code-Mixing,,,No
+few_shot43,GPT-5.6 Luna.,Domani preparo la cena e poi manciu cu li miei amici.,Yes,,Yes,,Code-Switching,,,Yes
+few_shot43,GPT-5.6 Luna.,Oggi preparo il pranzo e poi manciu cu la mia famiglia.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot44,GPT-5.6 Luna.,Domani vado al mercato e compro du pani causi.,Yes,,Yes,,Code-Mixing,,,No
+few_shot44,GPT-5.6 Luna.,Ieri ho incontrato me cummari davanti alla chiesa.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot44,GPT-5.6 Luna.,"Mia sorella ha preparato la cena, e poi me frati arrivaru a casa.",Yes,,Yes,,Code-Switching,,,No
+few_shot44,GPT-5.6 Luna.,"Domani mia madre va al mercato, e i picciotti già aspettanu fora.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot44,GPT-5.6 Luna.,"Ho parlato con mia nonna, e poi i picciotti hanno cominciato a cantare.",Yes,,Yes,,Code-Mixing,,,Yes
+zero-shot1,Gemini 3.8 Flash,"Stasera andiamo a mangiare una pizza tutti insieme, ma prima passa da tua nonna a salutare, ca chidda si scanta se non ti vede arrivare.",Yes,,Yes,,Code-Switching,,,Yes
+zero-shot1,Gemini 3.8 Flash,"Stasera andiamo a mangiare una pizza sul lungomare, ma prima passa da tua nonna a salutare, ca chidda si scanta se non ti vede arrivare.",Yes,,Yes,,Code-Switching,,,Yes
+zero-shot1,Gemini 3.8 Flash,"Ho provato a spiegare la situazione a tuo cugino, ma chiddu nun capisci un tubbu e continua a fare di testa sua.",Yes,,Yes,,Code-Switching,,,Yes
+zero-shot1,Gemini 3.8 Flash,"Volevo uscire a fare una passeggiata in centro, ma chiovi a zeffunnu e preferisco restare a casa sul divano.",Yes,,No,Other,,,,
+zero-shot1,Gemini 3.8 Flash,"Mettiti subito la giacca prima di uscire in cortile, ca ccà fora fa un friddu ca si mori.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,Gemini 3.8 Flash,"Ho cercato di spiegargli la situazione con calma, ma chistu un voli capiri nenti e continua a fare di testa sua.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,Gemini 3.8 Flash,"Stavo preparando le valigie per partire, ma cu stu sciroccu un si po fari nenti e ho preferito rimandare a domani.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,Gemini 3.8 Flash,Alla fine siamo arrivati in ritardo alla riunione perché iddu si persi pi strata e non sapeva più come tornare indietro.,Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,Gemini 3.8 Flash,"Volevo andare a fare una passeggiata in centro, ma comu si rici ""quannu u diavulu t'alliscia voli l'arma"", quindi alla fine ho preferito restare a casa tranquillo.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,Gemini 3.8 Flash,"Mi hanno detto di sbrigarmi perché u cafè si fridda, ma con questo traffico non riesco proprio ad arrivare in tempo.",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,Gemini 3.8 Flash,"Stavo preparando la cena per tutti, ma quannu vitti ca nun c’era chiù pani sono dovuto scendere di corsa al supermercato.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,Gemini 3.8 Flash,"Stavo tranquillamente leggendo il giornale sul balcone, ma poi vitti a me cuginu e ci dissi di salire subito a bere un caffè.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,Gemini 3.8 Flash,"Ho cercato le chiavi della macchina dappertutto, ma nun sacciu unni l’haju mpressu e adesso rischio di fare tardi all'appuntamento.",Yes,,Yes,,Code-Switching,,,No
+few_shot3,Gemini 3.8 Flash,"Volevo fare una passeggiata in centro, ma quannu grapivi a finestra vitti ca chiuvìa a strazzacoddu e sono rimasto a casa.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,Gemini 3.8 Flash,"Gli ho chiesto gentilmente di abbassare la musica, ma iddu fici finta di nenti e ha continuato a disturbare tutto il condominio.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot41,Gemini 3.8 Flash,Oggi dobbiamo andare subito al mercato per comprare un po' di babbaluci freschi per la cena di stasera.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot41,Gemini 3.8 Flash,Non posso credere che quel caruso abbia fatto un tale casino prima di andarsene via.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot41,Gemini 3.8 Flash,Mio nonno si siede sempre sotto l'albero per fare una breve pennica prima che arrivino gli ospiti.,No,Italian,,,,,,
+few_shot41,Gemini 3.8 Flash,"Dopo aver camminato per ore sotto il sole cocente, abbiamo finalmente trovato una sorgente fresca per toglierci la siti.",Yes,,Yes,,Code-Mixing,,,No
+few_shot41,Gemini 3.8 Flash,"Se continui a mangiare tutti quei dolci prima di cena, ti verrà sicuramente un forte mal di panza.",Yes,,Yes,,Code-Mixing,,,No
+few_shot42,Gemini 3.8 Flash,Oggi non posso venire al mercato pirchì haiu a travagghiari fino a tardi.,Yes,,Yes,,Code-Switching,,,No
+few_shot42,Gemini 3.8 Flash,Stasera andiamo a mangiare una pizza cu tutti i carusi.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot42,Gemini 3.8 Flash,Ieri sono andato a trovare mio nonno e m'ha dittu ca sta bonu.,Yes,,Yes,,Code-Switching,,,Yes
+few_shot42,Gemini 3.8 Flash,"Ho preparato la cena per tutti, ma iddi un vonnu manciari nenti.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot42,Gemini 3.8 Flash,Prendo subito la macchina picchì chiove troppu forte.,Yes,,Yes,,Code-Switching,,,Yes
+few_shot43,Gemini 3.8 Flash,Stasera mangiamo la pizza cu l'amici mei.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot43,Gemini 3.8 Flash,Domani vado a Palermo pi vìdiri a me nannu.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot43,Gemini 3.8 Flash,Sono andato al mercato pirchì vulìa accattari u pisci friscu.,Yes,,Yes,,Code-Switching,,,No
+few_shot43,Gemini 3.8 Flash,Oggi non posso uscire pirchì haiu a studiari pi l'esame.,Yes,,Yes,,Code-Switching,,,No
+few_shot43,Gemini 3.8 Flash,Ho comprato il pane e poi mi nni ivu a la casa.,Yes,,Yes,,Code-Switching,,,No
+few_shot44,Gemini 3.8 Flash,Ieri sera ho visto quel film perché chiddu carusu m’avìa dittu ca era bellu.,Yes,,Yes,,Code-Switching,,,Yes
+few_shot44,Gemini 3.8 Flash,Ieri sera ho mangiato una pizza e poi mi n'annai a la casa.,Yes,,No,Other,,,,
+few_shot44,Gemini 3.8 Flash,"Stamattina ho incontrato il professore, ma iddu unn'avìa tempu pi parràrimi.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot44,Gemini 3.8 Flash,"Mio fratello è andato al mercato, ma chiddu unn'accattau nenti.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot44,Gemini 3.8 Flash,"Volevo andare al mare, ma me patri mi dissi ca avìamu a travagghiari.",Yes,,Yes,,Code-Switching,,,Yes
+zero-shot1,Claude Sonnet 5.5,"Ieri sera siamo andati al mercato di Ballarò e ho comprato 'na cassata, ma poi me la sugnu mangiata tutta da solo prima di tornare a casa.",Yes,,Yes,,Code-Mixing,,,No
+zero-shot1,Claude Sonnet 5.5,"Domani vado a Catania con mia sorella, ma se chiove restamu a casa a taliari la televisione tutto il giorno.",Yes,,Yes,,Code-Mixing,,,Yes
+zero-shot1,Claude Sonnet 5.5,"Mia nonna dice sempre che la domenica a tavola s'ha a mangiari bonu, picchì senza 'u sugo di casa non è proprio domenica.",Yes,,Yes,,Code-Mixing,,,Yes
+zero-shot1,Claude Sonnet 5.5,"Stamattina mi sono svegliato presto per andare in spiaggia, ma quannu arrivai ci stava già tanta genti che non c'era più un posto libero.",Yes,,Yes,,Code-Mixing,,,No
+zero-shot1,Claude Sonnet 5.5,"Mio zio ha sempre detto che il pesce fresco si cumpra solo la matina presto, picchì dopo mezziornu ormai non vale più nenti.",Yes,,Yes,,Code-Mixing,,,No
+few_shot2,Claude Sonnet 5.5,"Ieri sono andato al mercato della Vucciria per comprare il pesce fresco, ma il venditore mi ha detto ""Amicu miu, ccà nun si fa cridenza a nuddu"", e allora ho pagato subito e me ne sono tornato a casa contento.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,Claude Sonnet 5.5,"Domani andiamo tutti a Mondello se il tempo regge, ma mia nonna dice sempre ""Quannu ciove, nun si joca a rumpiri l'ossa"", quindi porto l'ombrello per sicurezza.",Yes,,Yes,,Code-Switching,,,No
+few_shot2,Claude Sonnet 5.5,"Ho passato tutta la domenica a preparare la caponata per i parenti, e quando mio zio ha assaggiato il primo piatto ha esclamato ""Ammatula ti stancasti, nun ci ha statu mai cosa cchiù bona!"", così mi sono commosso e ho dovuto sedermi un attimo.",Yes,,Yes,,Code-Switching,,,No
+few_shot2,Claude Sonnet 5.5,"Stamattina in piazza ho incontrato Turiddu, che mi ha guardato storto e mi ha detto ""Unni vai accussì currennu, ca u suli è ancora vasciu?"", e io gli ho risposto che dovevo solo andare a prendere il pane prima che chiudesse il forno.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot2,Claude Sonnet 5.5,"Io avevo detto a Peppe di non preoccuparsi per l'esame, ma lui continuava a ripetere ""Mi sentu comu u pisci for' d'acqua"", e alla fine l'ho portato a prendere una granita con la brioche per fargli passare l'ansia.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,Claude Sonnet 5.5,"Ieri siamo andati al mercato di Ballarò, e u tizio mi ha detto che i pesci erano freschi, ma io viri ca nun mi fidu, quindi ho comprato solo il pane.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,Claude Sonnet 5.5,"Mia nonna mi ha preparato la pasta con le sarde, e mentre mangiavo mi dicìa: «Mancia, figghiu miu, ca sì tuttu sicchu», e io non ho potuto fare a meno di sorridere.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,Claude Sonnet 5.5,"Al bar sotto casa il barista mi ha chiesto se volevo un caffè, e io gli ho risposto: «Sì, grazie, ma fallu forti, ca stamatina haiu sonnu e nun mi staiu reggennu in peri».",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,Claude Sonnet 5.5,"Quando siamo arrivati a Catania ha cominciato a piovere forte, e mio zio, tuttu bagnatu, mi ha gridato: «Curri, carusu, ca si nun trasemu subitu pigghiamu un malannu!»",Yes,,Yes,,Code-Switching,,,Yes
+few_shot3,Claude Sonnet 5.5,"Siamo rimasti in spiaggia fino al tramonto, e quando il sole è sceso dietro gli scogli mia sorella ha sospirato: «Chi bellu mari, nun mi ni vorrìa jiri mai di cca».",Yes,,Yes,,Code-Switching,,,No
+few_shot41,Claude Sonnet 5.5,"Ieri sera siamo andati al mercato e abbiamo comprato un sacco di arancini, ma purtroppo a mia sorella non ci piacivano picchì erano troppo vucca asciutta.",Yes,,Yes,,Code-Switching,,,No
+few_shot41,Claude Sonnet 5.5,"Domenica scorsa mia nonna ha preparato una pignolata bellissima per tutti i nipoti, e quando l'abbiamo assaggiata ci siamo accorti che era proprio tinta di miele e di limone, una vera maraviglia.",No,Italian,,,,,,
+few_shot41,Claude Sonnet 5.5,"Stamattina mio zio è tornato dalla campagna con una cassetta di fichidindia e un mazzo di ficu, ma quando gli ho chiesto di aiutarmi a sbucciarli mi ha detto che aveva troppo fastidio alle manu.",Yes,,Yes,,Code-Mixing,,,No
+few_shot41,Claude Sonnet 5.5,"Ieri pomeriggio mio cugino è venuto a trovarci con un cesto pieno di cannola appena fatti, e mentre li mangiavamo in giardino ci ha raccontato che il suo vicino si era arrabbiato assai perché gli avevano rubato la machina davanti a casa.",No,Italian,,,,,,
+few_shot41,Claude Sonnet 5.5,"Stasera mia madre ha cucinato la pasta con le sarde per tutta la famiglia, e quando ci siamo seduti a tavola mio padre ha detto che non mangiava una cosa così bona da tanti anni.",No,Italian,,,,,,
+few_shot42,Claude Sonnet 5.5,Ieri sera simu jiuti a mangiare la pizza e dopo avemu caminatu finu a casa picchì era troppo tardi.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot42,Claude Sonnet 5.5,"Domani vogghiu jiri o mercatu cu me soru, ma prima dobbiamo finire di pulire la cucina.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot42,Claude Sonnet 5.5,"Stamattina me patri è jutu a travagghiare presto, ma noi abbiamo deciso di restare a casa a guardare la televisione.",Yes,,Yes,,Code-Mixing,,,No
+few_shot42,Claude Sonnet 5.5,"Sabato me cuscinu veni a truvarini a Torino, e poi andiamo tutti insieme a mangiare il gelato in piazza.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot42,Claude Sonnet 5.5,"Dumani me nonna voli priparari la pasta al forno, ma prima dobbiamo andare al mercato a comprare tutti gli ingredienti.",Yes,,Yes,,Code-Mixing,,,Yes
+few_shot43,Claude Sonnet 5.5,Ieri sera io e Marco semu jiuti o mercato e abbiamo comprato u pani cu la meusa.,Yes,,Yes,,Code-Mixing,,,Yes
+few_shot43,Claude Sonnet 5.5,Stamattina mia nonna è andata o mercatu e ha accattatu i pomodori cchiù beddi ca c'eranu.,Yes,,Yes,,Code-Mixing,,,No
+few_shot43,Claude Sonnet 5.5,Domani mio fratello veni a Palermu cu la machina nova e ci portiamo tutti a mangiare le arancine.,Yes,,Yes,,Code-Mixing,,,No
+few_shot43,Claude Sonnet 5.5,"Quannu torni dâ scola, mia sorella ci dice a mamma che vuole mangiare la pasta cu li sardi.",Yes,,Yes,,Code-Mixing,,,No
+few_shot43,Claude Sonnet 5.5,"Mentre mia madre priparava u sugu, io e me cuginu semu scesi a comprare il pane frescu.",Yes,,Yes,,Code-Mixing,,,No
+few_shot44,Claude Sonnet 5.5,Ieri Marco mi ha detto ca nun voli veniri a la festa di dumani.,Yes,,Yes,,Code-Switching,,,Yes
+few_shot44,Claude Sonnet 5.5,Stamattina me soru mi ha dittu ca la mamma di Giuseppe deve comprare il pane al mercato.,Yes,,Yes,,Code-Mixing,,,No
+few_shot44,Claude Sonnet 5.5,Domani la mamma di Giuseppe va a lu mercatu pi accattari il pane fresco.,Yes,,Yes,,Code-Mixing,,,No
+few_shot44,Claude Sonnet 5.5,Oggi mio fratello ha dittu ca la nonna di Paolo vo accattari u pani frescu pi la cena.,Yes,,Yes,,Code-Mixing,,,No
+few_shot44,Claude Sonnet 5.5,Ieri sira me cuginu mi ha dittu che la sua ragazza voli comprare u pani pi la festa di sabato.,Yes,,Yes,,Code-Mixing,,,No

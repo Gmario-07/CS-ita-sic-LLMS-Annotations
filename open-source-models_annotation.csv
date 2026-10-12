@@ -1,0 +1,107 @@
+condition,model,text,Does the generated sentence contain a switch between two or more languages?,Specify the only language present in the generated output.,Does the switch occur between the languages indicated in the prompt?,Specify the languages involved in the switch,Is the sentence produced a case of CS or CM?,"Does the generated sentence follow one of the main constraints presented in linguistic theory: MLF, EQ, FHC, FMC ?",Specify the followed constraint(s) ,"Does the sentence appear natural/plausible in a real communication
+context?"
+zero-shot1,mistralai/Mistral-7B-Instruct-v0.3,"""Vuètu 'mbutturatu stu cuscusu, cunni 'mbutturatu stu risu?"" (Do you want to eat the couscous, or do you want to eat the rice?)",Yes,,No,Sicilian + English,,,,
+zero-shot1,mistralai/Mistral-7B-Instruct-v0.3,Mia nonna fa 'mmusciata 'nnu siciliana quando cucca le arance. (My grandmother makes Sicilian marmalade when she cooks oranges.),Yes,,No,Italian + Sicilian + English,,,,
+zero-shot1,mistralai/Mistral-7B-Instruct-v0.3,"Saremmu 'a vabbiccia 'a nzìra, ma sta mia 'ngiurata a cu cuccìa 'n-'intarunatu.",No,Sicilian,,,,,,
+zero-shot1,mistralai/Mistral-7B-Instruct-v0.3,"Io mi stai a scucciari un bocconcino di pesce frescu, capisci? (I'm going to squeeze a little piece of fresh fish, you understand?)",Yes,,No,Sicilian + English,,,,
+zero-shot1,mistralai/Mistral-7B-Instruct-v0.3,"""Mia nonna fa 'mmustazzata 'ncannolina fin'a stu pàtastu."" (My grandmother makes the best cannoli up to this point.)",Yes,,No,Sicilian + English,,,,
+few_shot2,mistralai/Mistral-7B-Instruct-v0.3,"Giorno mattino, semu 'n caffè a cosa? Ma guarda qua, 'na pasta e fagioli è in cucina!",Yes,,Yes,,Code-Mixing,,,No
+few_shot2,mistralai/Mistral-7B-Instruct-v0.3,Giu' a vària 'ndrà! Va' fà 'n cena a l'amicu mio!,No,Sicilian,,,,,,
+few_shot2,mistralai/Mistral-7B-Instruct-v0.3,"Mi dissi ""Maria, svegliati! Chi è a porta?"" - Ma mi rispondeva solo il gattu che mi guardava dal letto.",Yes,,Yes,,Code-Mixing,,,No
+few_shot2,mistralai/Mistral-7B-Instruct-v0.3,"Vorrai un caffè, n'ammenduni a mia madre? Che cosa ti fa, se non cercare qualche conforto in questo momento difficile?",Yes,,Yes,,Code-Mixing,,,No
+few_shot2,mistralai/Mistral-7B-Instruct-v0.3,"Sicilianizza la mia giornata: Pranzo a casa mia, poi ""a scusa"" al parco per una passeggiata e poi a cena con gli amici alla trattoria ""A Via",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,mistralai/Mistral-7B-Instruct-v0.3,"Mamma mia, a vineru la festa domenica sera, sugnu ci aspettiamu lì stasira.",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,mistralai/Mistral-7B-Instruct-v0.3,"Prima di andare a cena, voglio dire: ""Nun mangiare bene, cara, vogliamo esser bene sani.""",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,mistralai/Mistral-7B-Instruct-v0.3,"Non ci pensa nzu, voglio parlaru bene in italiano. (Don't think about it, I want to speak well in Italian.)",Yes,,No,Italian + Sicilian + English,,,,
+few_shot3,mistralai/Mistral-7B-Instruct-v0.3,"Pazzo di fame, sugnu stannu affamatu, mi han detto che non c'è niente da mangiare in casa.",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,mistralai/Mistral-7B-Instruct-v0.3,"Maria mi ha detto: ""Chi chiunni, ca nun c'à chi fa l'u scannari?"" E poi è andata via con un sorriso misterioso.",Yes,,Yes,,Code-Switching,,,No
+few_shot41,mistralai/Mistral-7B-Instruct-v0.3,"Il mio nonnu, unu uomu stroncu e gentile, ha fatto i pasta e sughiu 'ncannolati.",Yes,,Yes,,Code-Mixing,,,No
+few_shot41,mistralai/Mistral-7B-Instruct-v0.3,"Sono andati a visità 'n casa mia, ma l'arancia non è stata trovata, scusa, ti lo dico a mezzu 'o sole.",Yes,,Yes,,Code-Mixing,,,No
+few_shot41,mistralai/Mistral-7B-Instruct-v0.3,"""Io, 'u nittiratu, 'o munnu cunta storia 'mmuriata di mei paternu, chi s'è nzà 'u mundu 'mmotu, fatt",No,Sicilian,,,,,,
+few_shot41,mistralai/Mistral-7B-Instruct-v0.3,"Io, *'u munnu* di Palermo, *vu cu mangiaru* una pasta alla Siciliana *con le sarde*. (I, the man from Palermo, we want to eat a Sic",Yes,,No,Italian + Sicilian + English,,,,
+few_shot41,mistralai/Mistral-7B-Instruct-v0.3,"Il vino è buonu, ma il pesce, è insuperabile, sicuramente. (The wine is good, but the fish, is incomparable, certainly.)",Yes,,No,Italian + Sicilian + English,,,,
+few_shot42,mistralai/Mistral-7B-Instruct-v0.3,"Vorrei un caffè espresso, ma non ho il soldino, ma io 'nso a chi posso chiedere 'na lira.",Yes,,Yes,,Code-Mixing,,,No
+few_shot42,mistralai/Mistral-7B-Instruct-v0.3,"Io sono di Sicilia, ma mi piace mangiare pizza margherita alla napoletana. (I am from Sicily, but I like to eat Neapolitan-style margherita pizza.)",Yes,,No,Italian + English,,,,
+few_shot42,mistralai/Mistral-7B-Instruct-v0.3,"Io sono un giovane nissuno 'ntu, ma parlo molto bene l'italiano. (I am a young nobody from you, but I speak Italian very well.)",Yes,,No,Italian + Sicilian + English,,,,
+few_shot42,mistralai/Mistral-7B-Instruct-v0.3,"Il pasta è buono, ma la pasta cun i maccheroni 'nnammurati 'e ricotta è magari meglio. (The pasta is good, but the pasta with the maccheroni sm",Yes,,No,Italian + Sicilian + English,,,,
+few_shot42,mistralai/Mistral-7B-Instruct-v0.3,"Mangia 'a pasta con le sarde, ma davvero ho fame di pani cunzatu. (Eat sardine pasta, but really I have a craving for seasoned bread.)",Yes,,No,Italian + Sicilian + English,,,,
+few_shot43,mistralai/Mistral-7B-Instruct-v0.3,"Mangia e bevi, 'ncannu, si faccia benissimo! (Eat and drink, [my] friend, may it be very good!)",Yes,,No,Italian + Sicilian + English,,,,
+few_shot43,mistralai/Mistral-7B-Instruct-v0.3,"Mi fa 'nnusciata 'na cosa bella, quella nuova macchina rossa. (Italian: Mi fa arrabbiata una cosa bella, quella nuova macchina ro",Yes,,Yes,,Code-Switching,,,No
+few_shot43,mistralai/Mistral-7B-Instruct-v0.3,"Io 'nnammuri, ma sicuramente non sto 'nnamuratu! (I am in love, but certainly not head over heels in love!)",Yes,,No,Italian + Sicilian + English,,,,
+few_shot43,mistralai/Mistral-7B-Instruct-v0.3,"Io parlo 'nnammuri, ma intendo bene 'n lingua 'ngliessa. (I speak in a mumbling way, but I understand the English language.)",Yes,,No,Italian + Sicilian + English,,,,
+few_shot43,mistralai/Mistral-7B-Instruct-v0.3,"Io vivo 'nnammurato di quella bella ragazza, ma lei parla 'ncappa 'n Siciliano. (I am smitten with that beautiful girl, but she speaks in Sicilian.)",Yes,,No,Italian + Sicilian + English,,,,
+few_shot44,mistralai/Mistral-7B-Instruct-v0.3,"Io sto facendo il caffè, ma vorrei una granita di limone, per favore. (I am making coffee, but I would like a granita of lemon, please.)",Yes,,No,Italian + English,,,,
+few_shot44,mistralai/Mistral-7B-Instruct-v0.3,"Io sto facendo i compiti, ma devo fare un po' di cosa a casa mia, perché mi ricordo che è domenica e devo andare in chiesa. (I am doing homework,",Yes,,No,Italian + English,,,,
+few_shot44,mistralai/Mistral-7B-Instruct-v0.3,"Io sto parlando in italiano, ma voglio dire che mi stai facendo male, capisce? (I am speaking in Italian, but I mean that you are hurting me, understand?)",Yes,,No,Italian + English,,,,
+few_shot44,mistralai/Mistral-7B-Instruct-v0.3,"Io voglio andare al mercato, ma vorrei che tu mi aiutassi a comprare qualcosa in dialetto siciliano. (I want to go to the market, but I would like you to help",Yes,,No,Italian + English,,,,
+few_shot44,mistralai/Mistral-7B-Instruct-v0.3,"Mangia, vurria un caffè espresso, poi andiamo alla spiaggia per giochiare bocce. (Eat, I would like an espresso coffee, then let'",Yes,,No,Italian + English,,,,
+zero-shot1,Qwen/Qwen2.5-7B-Instruct,Sto andando 'u lussu 'ncu 'na macchina nuovissima ma non so ancora c'è ddì nnuovo 'nnella stazione ddi 'mmaria.,Yes,,Yes,,Code-Mixing,,,No
+zero-shot1,Qwen/Qwen2.5-7B-Instruct,Stasera vado a mangiare 'ncamaratu con i miei parenti e poi ci stiamo a parlare 'ncu l'occhi aperti.,Yes,,Yes,,Code-Mixing,,,No
+zero-shot1,Qwen/Qwen2.5-7B-Instruct,Sto mangiando una 'ndama ma mia sorella preferisce la cannella.,No,Italian,,,,,,
+zero-shot1,Qwen/Qwen2.5-7B-Instruct,"Mi piace 'nu cociatnu e 'na santuzza, ma st'annni 'o mercato j'accusa di 'nu 'ccàstiu prezzo.",No,Sicilian,,,,,,
+zero-shot1,Qwen/Qwen2.5-7B-Instruct,"Stasera v'aggio mangià 'nu cuccù e 'na pasta 'e marzapane, ma j'volo 'mmettere un cappotto 'ca 'o freddo sta venind'o!",Yes,,No,Other,,,,
+few_shot2,Qwen/Qwen2.5-7B-Instruct,"Se vuoi 'na cosa, fittela tu stessa! Ma allora... una volta a Palermo, chi la fa?!? Sti zuccheri n'ana comproari?!? Si viaggi nuove cento km",Yes,,Yes,,Code-Switching,,,No
+few_shot2,Qwen/Qwen2.5-7B-Instruct,Me vò bene ma sti melenzi ci metti su un'ora a fare chist'opera!,Yes,,No,Other,,,,
+few_shot2,Qwen/Qwen2.5-7B-Instruct,"Se vuoi arrivare tardi, prendi il mare! Ma poi, quando sei a Catania chi fa?!? Sti carusi n'ana mangiari?!? Si ficiunu centu km...poi sbumica a",Yes,,Yes,,Code-Switching,,,No
+few_shot2,Qwen/Qwen2.5-7B-Instruct,Me 'o fai 'na pasta e poi v'andamu a ballari! Ma semu pesi!!!,No,Sicilian,,,,,,
+few_shot2,Qwen/Qwen2.5-7B-Instruct,Semu 'na scimmia a mazziu na fiore! Ma allora che succo'?,Yes,,Yes,,Code-Mixing,,,No
+few_shot3,Qwen/Qwen2.5-7B-Instruct,"Ho chiamato Mario e gli ho detto: ""Te l'avevo detto, mica te l'aveva detto la radio che veniva stasira?""",No,Italian,,,,,,
+few_shot3,Qwen/Qwen2.5-7B-Instruct,"Sono uscito presto, e nun cucciu buonora, jemi al lavoro ca era jenu puntuale, ma oggieri ci fu un'interruzione, chiamata greppe!",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,Qwen/Qwen2.5-7B-Instruct,"Sono andato al mercato, e là ho trovato un pezze gran bello, ma nun potevo comprarlo ca era troppo caro, e poi v'ho raccontato tutto a mia moglie, e",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,Qwen/Qwen2.5-7B-Instruct,"Sono andato al mercato, e c'è nun gran casino, ciuccu cebbi e frutti che nun sonnu buoni, e poi ci vini e parricci che nun scappanno da",Yes,,Yes,,Code-Switching,,,No
+few_shot3,Qwen/Qwen2.5-7B-Instruct,"Sono uscito tardi, vvvu vuddu jemu azzurru 'nfestu, ma poi nnu cuntari ch'agginnu un disastro in piazza.",Yes,,Yes,,Code-Mixing,,,No
+few_shot41,Qwen/Qwen2.5-7B-Instruct,Ho una gran setta e sto andannu a ballari con i miei figghiu in via Roma.,Yes,,Yes,,Code-Mixing,,,No
+few_shot41,Qwen/Qwen2.5-7B-Instruct,"Mi piace mangià 'na pasta con zuccuna, ma j'aggio nun bello appétito stasera.",Yes,,No,Other,,,,
+few_shot41,Qwen/Qwen2.5-7B-Instruct,"Ho visto un 'uomo che stava passeggiando in piazza e diceva ""cu l'anni t'ha fatto arriva a sto punto, sicuri?""",Yes,,Yes,,Code-Switching,,,No
+few_shot41,Qwen/Qwen2.5-7B-Instruct,Io sto mangiando un pannucciu con mia madre ma stassera ci ballammo un poco di salsa siciliana.,Yes,,Yes,,Code-Mixing,,,No
+few_shot41,Qwen/Qwen2.5-7B-Instruct,Mi piace mangià 'na pasta con zitti e 'na salsà di 'nu verdura frescu.,Yes,,Yes,,Code-Mixing,,,No
+few_shot42,Qwen/Qwen2.5-7B-Instruct,"Mi chiamo Vincenzo Scuderi, ma tutti mi chiamano Vince e ci siete venuti pure voi alla partita stasera, no?",No,Italian,,,,,,
+few_shot42,Qwen/Qwen2.5-7B-Instruct,Mi piace mangiare 'na pasta con salvia e peperoni.,Yes,,Yes,,Code-Mixing,,,No
+few_shot42,Qwen/Qwen2.5-7B-Instruct,Mi piace mangiare 'o pasta co' vini nostru.,Yes,,Yes,,Code-Mixing,,,No
+few_shot42,Qwen/Qwen2.5-7B-Instruct,"Mi va bene un caffè e un ghiacciolo, se ti pare.",No,Italian,,,,,,
+few_shot42,Qwen/Qwen2.5-7B-Instruct,"Mi chiamo Giovanni ma a casa mia si dice ""Scuoti la testa"" quando non sei d'accordo.",No,Italian,,,,,,
+few_shot43,Qwen/Qwen2.5-7B-Instruct,Mi piace mangiare 'ncatà a sera e bere vino italiano.,Yes,,No,Other,,,,
+few_shot43,Qwen/Qwen2.5-7B-Instruct,Ho chiamato mia mama e lei mi ha risposto che stava facinna un pizzetta con zitti e salamis.,Yes,,Yes,,Code-Mixing,,,No
+few_shot43,Qwen/Qwen2.5-7B-Instruct,Mi piace mangiare 'o pasta co' vini nostru.,Yes,,Yes,,Code-Mixing,,,No
+few_shot43,Qwen/Qwen2.5-7B-Instruct,"Vuoi un caffè? Se no, preferisci un *cuccurucciu*.",Yes,,No,Other,,,,
+few_shot43,Qwen/Qwen2.5-7B-Instruct,Mi chiamo Giovanni ma tutti mi chiamano Giannu 'o ccà.,Yes,,Yes,,Code-Mixing,,,No
+few_shot44,Qwen/Qwen2.5-7B-Instruct,Mi chiamo Giuseppe e sto mangiando un pizza siciliana.,No,Italian,,,,,,
+few_shot44,Qwen/Qwen2.5-7B-Instruct,Mi chiamo Vincenzo e parlo bene siciliano ma quando sono in Italia preferisco usar'la lingua italiana perché 'e più formale.,No,Italian,,,,,,
+few_shot44,Qwen/Qwen2.5-7B-Instruct,Mi chiamo Vincenzo e parlo bene Siciliano ma pure un po' di italiano.,No,Italian,,,,,,
+few_shot44,Qwen/Qwen2.5-7B-Instruct,Mi chiamo Vincenzo e parlo bene s'italiana.,No,Italian,,,,,,
+few_shot44,Qwen/Qwen2.5-7B-Instruct,Mi chiamo Vincenzo e parlo bene siciliano ma spesso mescolo un po' di italiano quando ci sono i miei amici.,No,Italian,,,,,,
+zero-shot1,meta-llama/Llama-3.1-8B-Instruct,"Mi piace 'mparari a nuvola ca fa 50 gradi, ma a casa c'è l'acqua calda.",Yes,,Yes,,Code-Switching,,,No
+zero-shot1,meta-llama/Llama-3.1-8B-Instruct,"Voi, amici, vinni a mangia' 'a pizzeria e ci addimustrammo a lu chef.",Yes,,Yes,,Code-Switching,,,No
+zero-shot1,meta-llama/Llama-3.1-8B-Instruct,Mi piace mangiari a li pulizzi paniaru di San Giuseppe.,Yes,,Yes,,Code-Mixing,,,No
+zero-shot1,meta-llama/Llama-3.1-8B-Instruct,"M'agghià a nun potiri vjì 'ntra 'sta furgata, ma c'è un posti bellu a màzzara a Marsala.",No,Sicilian,,,,,,
+zero-shot1,meta-llama/Llama-3.1-8B-Instruct,"Mi è capitato nuvvamu 'mpignu, ma ho deciso di andare a mangiare una buonissima arancina.",Yes,,Yes,,Code-Switching,,,No
+few_shot2,meta-llama/Llama-3.1-8B-Instruct,"Cu' è successu a l'azienda? 'Nna giornata così brutta, non si vendi più niente.",Yes,,Yes,,Code-Switching,,,No
+few_shot2,meta-llama/Llama-3.1-8B-Instruct,"A mia figlia, per favore, non farti tappari a lu naso, ma lascia che ti vesta da sola.",Yes,,Yes,,Code-Switching,,,No
+few_shot2,meta-llama/Llama-3.1-8B-Instruct,"Sema pessi! Mentre sto a casa, non riesco a fare a meno di pensare a lu mundu che è cambiato tanto in questi anni, e semu non abbiamo ancora capito che cos'è l'ambient",Yes,,Yes,,Code-Mixing,,,No
+few_shot2,meta-llama/Llama-3.1-8B-Instruct,"Mio fratello è sempre a dire che ""u sinnu è 'n sacco"" ma lui non capisce che non basta avere un buon carattere per essere felice.",Yes,,Yes,,Code-Switching,,,No
+few_shot2,meta-llama/Llama-3.1-8B-Instruct,"Mi sono scordato 'n regalo pe' la festa di mia nuora, a dì che ""la nonna è uscita dalla cucina con la testa in fiamme"".",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,meta-llama/Llama-3.1-8B-Instruct,"Sono andato al mare con i miei amici, ma ieri sera sugnu riturnatu a casa già a tarda notte.",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,meta-llama/Llama-3.1-8B-Instruct,"Ho provato a cucinare il pesce aragosta, ma 'u risultatu è stato assai delusu.",Yes,,Yes,,Code-Mixing,,,No
+few_shot3,meta-llama/Llama-3.1-8B-Instruct,"Il mio nonno, azzzzittu, mi ha sempre detto che la vita è un grande viaggio, e nun ci pozzu mancàrisi nudda.",Yes,,Yes,,Code-Switching,,,No
+few_shot3,meta-llama/Llama-3.1-8B-Instruct,"Il mio amico siciliano, che è un ottimo cuoco, m'ha chiesto: «Cumu ci pruvamu 'a pizza?», e poi si è messo a preparare gli ingredienti.",Yes,,Yes,,Code-Switching,,,No
+few_shot3,meta-llama/Llama-3.1-8B-Instruct,"Il mio nonno mi ha raccontato che, quandu i miei nonni erano giovani, si divertivano molto a danzare a una festa.",Yes,,Yes,,Code-Mixing,,,No
+few_shot41,meta-llama/Llama-3.1-8B-Instruct,Mia nonna mi accennava sempre di andà a lu portu.,Yes,,Yes,,Code-Switching,,,No
+few_shot41,meta-llama/Llama-3.1-8B-Instruct,"La mia nonna, chistu è un pani càcu 'n forno appena cotto, me l'ha preparatu.",Yes,,Yes,,Code-Switching,,,No
+few_shot41,meta-llama/Llama-3.1-8B-Instruct,"Mi va a cazzu, ma vengo a comprà un cappuccino.",Yes,,Yes,,Code-Mixing,,,No
+few_shot41,meta-llama/Llama-3.1-8B-Instruct,"Mi va a chiedere  un caffè, ma lui non c'è ancora.",No,Italian,,,,,,
+few_shot41,meta-llama/Llama-3.1-8B-Instruct,Mi vò 'nciari a comprà un cafè in paese.,Yes,,Yes,,Code-Mixing,,,No
+few_shot42,meta-llama/Llama-3.1-8B-Instruct,I vai a comprà nu libru d'astronomia e 'e teorie chiu nuove 'e Einstein.,No,Other,,,,,,
+few_shot42,meta-llama/Llama-3.1-8B-Instruct,Mi piaceva mangiari la pizza siciliana appena pronta.,No,Italian,,,,,,
+few_shot42,meta-llama/Llama-3.1-8B-Instruct,Io vinni 'nna casa mia a mangiari unu panu cun u formaggi e un caffè.,Yes,,Yes,,Code-Mixing,,,No
+few_shot42,meta-llama/Llama-3.1-8B-Instruct,"Mi piaceva molto la lingua siciliana, ma mi è toccato parlare in italiano per descrivere la sua bellezza.",No,Italian,,,,,,
+few_shot42,meta-llama/Llama-3.1-8B-Instruct,"Viva 'u mari, è il momento di andare al mare.",Yes,,Yes,,Code-Switching,,,Yes
+few_shot43,meta-llama/Llama-3.1-8B-Instruct,M'ha dittu chista nova ca va a èssiri trattata a Palermo.,No,Sicilian,,,,,,
+few_shot43,meta-llama/Llama-3.1-8B-Instruct,Mi piace mangià la pasta alla norma cu li fichi freschi.,Yes,,Yes,,Code-Mixing,,,No
+few_shot43,meta-llama/Llama-3.1-8B-Instruct,"Oggi mi vò fari lu cappiuni, 'na ricetta tipicu di Sicilia.",No,Sicilian,,,,,,
+few_shot43,meta-llama/Llama-3.1-8B-Instruct,"L'addiuvu 'n pulmannu è appena arrivata 'n portu, ma aro 'ntendimentu è chistu: l'assistenza è disponibbli.",Yes,,Yes,,Code-Mixing,,,No
+few_shot43,meta-llama/Llama-3.1-8B-Instruct,"Mi vinni a casa, comprai un pisci frescu e acciappai mia mogli a cucinà un dînnu di Natale.",No,Sicilian,,,,,,
+few_shot44,meta-llama/Llama-3.1-8B-Instruct,"Il mio amico, appena arrivato, mi ha chiesto ""C'ùn pizzu?"" e poi mi ha detto che vuole ""una birra"".",Yes,,Yes,,Code-Switching,,,No
+few_shot44,meta-llama/Llama-3.1-8B-Instruct,"Lu Marianu c'ha compratu nu quartu appartamentu a Roma, 'nci- 'mparava a fà nu affare accattivante.",Yes,,Yes,,Code-Mixing,,,No
+few_shot44,meta-llama/Llama-3.1-8B-Instruct,Mi piace mangià nu cuccuni di pasta 'ncasciata e pizza.,Yes,,Yes,,Code-Mixing,,,No
+few_shot44,meta-llama/Llama-3.1-8B-Instruct,U lì cazzi c'haju chiddu ca u mèmu canta la canzone.,Yes,,Yes,,Code-Mixing,,,No
+few_shot44,meta-llama/Llama-3.1-8B-Instruct,"Il mio nonno sicilianu mi ha dettu ca ""amuri"" è la chiave ppa' capìr lu munnu.",Yes,,Yes,,Code-Mixing,,,No
